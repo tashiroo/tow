@@ -1,0 +1,49 @@
+.body {
+  display: grid;
+  width: 100%;
+  height: 600px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "main first first"
+    "main center center"
+    "main last last"
+    "footer footer footer";
+}
+
+.header {
+  width: 100%;
+  background-color: azure;
+  grid-area: header;
+}
+
+.main {
+  width: 100%;
+  background-color: blueviolet;
+  grid-area: main;
+}
+
+.first {
+  width: 100%;
+  background-color: darkkhaki;
+  grid-area: first;
+}
+
+.center {
+  width: 100%;
+  background-color: salmon;
+  grid-area: center;
+}
+
+.last {
+  width: 100%;
+  background-color: silver;
+  grid-area: last;
+}
+
+.footer {
+  width: 100%;
+  background-color: rosybrown;
+  grid-area: footer;
+}
